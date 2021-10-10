@@ -1,0 +1,996 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6, li, a, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#home {
+  width: 100%;
+}
+
+#home .header-top {
+  background-color: #f5fbff;
+  padding: 1.5rem 0 0.5rem;
+}
+
+#home .header-top .social_links {
+  padding-left: 1rem;
+}
+
+#home .header-top .social_links a {
+  text-decoration: none;
+}
+
+#home .header-top .social_links i {
+  color: darkgrey;
+  padding-right: 0.4rem;
+  font-size: 1.1rem;
+}
+
+#home .header-top .short_contact_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#home .header-top .short_contact_list ul li {
+  list-style: none;
+  padding: 0  1.5rem;
+}
+
+#home .header-top .short_contact_list ul li a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+#home .header-top .short_contact_list ul li a i {
+  color: #009dff;
+  padding-right: 0.3rem;
+}
+
+#home nav {
+  width: 100%;
+}
+
+#home nav .my-navigation {
+  background: #fff;
+  padding: 1.5rem 0;
+}
+
+#home nav .my-navigation .my-navbar {
+  margin: 0 auto;
+}
+
+#home nav .my-navigation .my-navbar a {
+  color: grey;
+  padding: 0  0.6rem;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#home nav .btn a {
+  width: 13rem;
+  height: 3rem;
+  text-decoration: none;
+  background: #009dff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 12px 20px;
+  border: 1px solid #009dff;
+  border-radius: 4px;
+  word-spacing: 2px;
+}
+
+#home nav .btn a:hover {
+  background: transparent;
+  color: #009dff;
+}
+
+.slider_area {
+  width: 100%;
+  position: relative;
+}
+
+.slider_area .item {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider_area .image-slider1 {
+  background: url("../img/banner-1.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider_area .image-slider2 {
+  background: url("../img/banner-2.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider_area .slider_text {
+  position: absolute;
+  z-index: 1;
+  color: #000;
+  top: 25%;
+  left: 10%;
+}
+
+.slider_area .slider_text h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 5.8rem;
+}
+
+.slider_area .slider_text h1 span {
+  font-weight: 700;
+}
+
+.slider_area .slider_text p {
+  color: #727272;
+  padding: 1.5rem 0 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+.slider_area .slider_text .btn-1 {
+  margin-top: 2rem;
+}
+
+.slider_area .slider_text .btn-1 a {
+  background: #0181f5;
+  background: -webkit-gradient(linear, left top, right top, from(#0181f5), to(#5db2ff));
+  background: linear-gradient(to right, #0181f5 0%, #5db2ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0181f5', endColorstr='#5db2ff',GradientType=1 );
+  padding: 18px 44px;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.slider_area .slider_text .btn-1 a:hover {
+  background: #fff;
+  color: #009dff;
+  border: 1px solid #009dff;
+}
+
+.service-section {
+  width: 100%;
+  background-color: #83c4ff;
+}
+
+.service-section .single_service {
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.service-section .single_service .icon img {
+  width: 15%;
+}
+
+.service-section .single_service h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-top: 1.2rem;
+}
+
+.service-section .single_service p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  padding: 1rem 0 2.5rem;
+}
+
+.service-section .single_service .boxed-btn3 {
+  width: 15rem;
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  word-spacing: 2px;
+}
+
+.service-section .single_service .boxed-btn3:hover {
+  background: #fff;
+  color: #009dff;
+}
+
+.service-section .mid {
+  background: #009dff;
+}
+
+#welcome-docmed-sec {
+  width: 100%;
+  background-color: #fff;
+  padding: 5rem 0 6rem;
+}
+
+#welcome-docmed-sec .image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#welcome-docmed-sec .image .img-A {
+  width: 50%;
+}
+
+#welcome-docmed-sec .image .img-A img {
+  width: 100%;
+}
+
+#welcome-docmed-sec .image .img-B {
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  left: 33%;
+  top: 25%;
+}
+
+#welcome-docmed-sec .image .img-B img {
+  width: 100%;
+}
+
+#welcome-docmed-sec .text h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+#welcome-docmed-sec .text hr {
+  width: 10%;
+  border: 0;
+  height: 2px;
+  background-color: #009dff;
+}
+
+#welcome-docmed-sec .text h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#welcome-docmed-sec .text p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 1.8rem;
+  padding: 0.8rem 0 0;
+  color: grey;
+}
+
+#welcome-docmed-sec .text ul {
+  padding: 1rem 0;
+}
+
+#welcome-docmed-sec .text ul li {
+  list-style: none;
+  color: grey;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+#welcome-docmed-sec .text ul li i {
+  color: #009dff;
+  padding-right: 0.5rem;
+}
+
+#welcome-docmed-sec .text .boxed-btn4 {
+  text-decoration: none;
+  color: #009dff;
+  border: 1px solid #009dff;
+  background: transparent;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+#welcome-docmed-sec .text .boxed-btn4:hover {
+  color: #fff;
+  background: #009dff;
+}
+
+#our-department-sec {
+  width: 100%;
+  background-color: #f5fbff;
+  padding: 4rem 0;
+}
+
+#our-department-sec .section-title {
+  padding-bottom: 3rem;
+}
+
+#our-department-sec .section-title h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#our-department-sec .section-title hr {
+  width: 5.5%;
+  border: 0;
+  height: 2px;
+  background-color: #009dff;
+  margin: 1rem auto;
+}
+
+#our-department-sec .section-title p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  color: gray;
+}
+
+#our-department-sec .single_department {
+  width: 100%;
+  background-color: #fff;
+  margin: 1rem 0;
+}
+
+#our-department-sec .single_department .department_thumb {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#our-department-sec .single_department .department_thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+#our-department-sec .single_department .department_content {
+  padding: 1.5rem 2rem;
+}
+
+#our-department-sec .single_department .department_content h3 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#our-department-sec .single_department .department_content h3:hover {
+  color: #009dff;
+}
+
+#our-department-sec .single_department .department_content p {
+  padding: 0.8rem 0;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: gray;
+}
+
+#our-department-sec .single_department .department_content .learn_more {
+  color: #009dff;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#our-department-sec .single_department:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.testmonial {
+  width: 100%;
+}
+
+.testmonial .item {
+  width: 100vw;
+  height: 100vh;
+}
+
+.testmonial .image-slider1 {
+  background: url("../img/testmonial-2.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testmonial .image-slider2 {
+  background: url("../img/testmonial-1.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testmonial .slider_text {
+  color: #fff;
+  padding-top: 17%;
+}
+
+.testmonial .slider_text .quote img {
+  width: 4%;
+  margin: 0 auto;
+}
+
+.testmonial .slider_text p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+  padding: 1rem 0 2rem;
+}
+
+.testmonial .slider_text hr {
+  width: 7%;
+  border: 0;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.testmonial .slider_text h4 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+#business-expert {
+  width: 100%;
+}
+
+#business-expert .texter {
+  background-color: #f5fbff;
+}
+
+#business-expert .texter .text-2 {
+  padding: 2rem 0;
+}
+
+#business-expert .texter .text-2 h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+#business-expert .bottom-part {
+  padding: 5rem 0;
+  border-bottom: 1px solid darkgray;
+}
+
+#business-expert .bottom-part .left {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+#business-expert .bottom-part .left .icon-2 {
+  width: 85px;
+  height: 85px;
+  background: #5db2ff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#business-expert .bottom-part .left .icon-2 img {
+  width: 45%;
+  padding-top: 1.5rem;
+}
+
+#business-expert .bottom-part .left h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+#business-expert .bottom-part .left p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: gray;
+  line-height: 1.7rem;
+}
+
+#business-expert .bottom-part .right {
+  width: 100%;
+}
+
+#business-expert .bottom-part .right .image-2 img {
+  width: 100%;
+}
+
+#expert-doctors-sec {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+#expert-doctors-sec .heading {
+  padding-bottom: 3rem;
+}
+
+#expert-doctors-sec .heading h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+#expert-doctors-sec .item {
+  width: 100%;
+  background: #f5fbff;
+}
+
+#expert-doctors-sec .item .team-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#expert-doctors-sec .item .team-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#expert-doctors-sec .item .team-text {
+  padding: 1.3rem 0;
+}
+
+#expert-doctors-sec .item .team-text h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#expert-doctors-sec .item .team-text span {
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: gray;
+  padding: 0.5rem 0;
+}
+
+#expert-doctors-sec .item:hover {
+  background: #009dff;
+}
+
+#expert-doctors-sec .item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#expert-doctors-sec .item:hover .team-text h3, #expert-doctors-sec .item:hover .team-text span {
+  color: #fff;
+}
+
+#expert-doctors-sec .owl-theme .owl-nav {
+  display: none;
+}
+
+.Emergency-contact-sec {
+  width: 100%;
+}
+
+.Emergency-contact-sec .left-part {
+  padding: 7rem 0;
+  background-image: url("../img/emergency-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 6rem;
+}
+
+.Emergency-contact-sec .right-part {
+  padding: 7rem 0;
+  background-image: url("../img/emergency-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4rem;
+}
+
+.Emergency-contact-sec .left-part, .Emergency-contact-sec .right-part {
+  width: 100%;
+  position: relative;
+}
+
+.Emergency-contact-sec .left-part::before, .Emergency-contact-sec .right-part::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #5db2ff;
+  opacity: 0.8;
+}
+
+.Emergency-contact-sec .info {
+  z-index: 10;
+  color: #fff;
+}
+
+.Emergency-contact-sec .info h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.Emergency-contact-sec .info p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  padding-top: 0.5rem;
+}
+
+.Emergency-contact-sec .info_button {
+  z-index: 10;
+  width: 14rem;
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.6rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 5rem;
+  margin-left: 1.4rem;
+  text-align: center;
+}
+
+.Emergency-contact-sec .info_button:hover {
+  background: #fff;
+  color: #009dff;
+}
+
+#footer {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 4rem 0 0;
+}
+
+#footer .footer_widget {
+  padding: 1rem 0 3rem;
+}
+
+#footer .footer_widget p {
+  padding: 2.5rem 0;
+  color: darkgray;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.9rem;
+}
+
+#footer .footer_widget .socail_links {
+  padding-top: 1rem;
+}
+
+#footer .footer_widget .socail_links a {
+  width: 50px;
+  height: 50px;
+  background: #707070;
+  margin: 0 0.5rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#footer .footer_widget .socail_links a:hover i {
+  color: #fff;
+}
+
+#footer .footer_widget .socail_links i {
+  color: darkgray;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+#footer .footer_widget .footer_title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#footer .footer_widget ul {
+  padding: 2.5rem 0;
+}
+
+#footer .footer_widget ul li {
+  list-style: none;
+}
+
+#footer .footer_widget ul li a {
+  color: darkgray;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  width: 100%;
+  background-color: #000;
+}
+
+#footer .copyright .copyright-text {
+  padding: 2rem 0;
+}
+
+#footer .copyright .copyright-text p {
+  color: darkgray;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+
+#footer .copyright .copyright-text span {
+  color: #009dff;
+}
+
+@media (max-width: 1199px) {
+  .slider_area .slider_text h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .slider_area .slider_text p {
+    padding: 1rem 0 1.7rem;
+  }
+  .Emergency-contact-sec .left-part, .Emergency-contact-sec .right-part {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+  .Emergency-contact-sec .left-part .info_button, .Emergency-contact-sec .right-part .info_button {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #home nav {
+    padding: 1rem 0;
+  }
+  #home nav .my-navigation .my-navbar a {
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+  #home nav .btn {
+    display: none;
+  }
+  #home nav .navbar-toggler {
+    border: none;
+  }
+  #home nav .navbar-toggler .fa {
+    font-size: 2rem;
+  }
+  .service-section .single_service h3 {
+    font-size: 1.5rem;
+  }
+  .service-section .single_service p {
+    font-size: 1rem;
+  }
+  .service-section .single_service .boxed-btn3 {
+    padding: 0.7rem 1.2rem;
+  }
+  #welcome-docmed-sec .image .img-B {
+    left: 40%;
+    top: 12%;
+  }
+  #welcome-docmed-sec .text {
+    padding-top: 7rem;
+  }
+  #welcome-docmed-sec .text h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  #welcome-docmed-sec .text h3 {
+    font-size: 2.2rem;
+    padding-top: 1.5rem;
+  }
+  #welcome-docmed-sec .text p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  #welcome-docmed-sec .text ul {
+    padding: 0 0 2rem;
+  }
+  #welcome-docmed-sec .text ul li {
+    font-size: 1rem;
+  }
+  .testmonial .slider_text {
+    padding-top: 22%;
+  }
+  .testmonial .slider_text p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .testmonial .slider_text h4 {
+    font-size: 1rem;
+  }
+  #business-expert .texter .text-2 {
+    padding: 1.2rem 0;
+  }
+  #business-expert .texter .text-2 h4 {
+    font-size: 1rem;
+  }
+  #business-expert .bottom-part {
+    padding: 3rem 0;
+  }
+  #business-expert .bottom-part .left {
+    padding-top: 0;
+  }
+  #business-expert .bottom-part .left h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.6rem 0;
+  }
+  #business-expert .bottom-part .left p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  #footer {
+    padding: 3rem 0 0;
+  }
+  #footer .footer_widget {
+    padding: 1rem 0 1rem;
+  }
+  #footer .footer_widget p {
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  #footer .footer_widget .socail_links {
+    padding-top: 0.6rem;
+  }
+  #footer .footer_widget .footer_title {
+    font-size: 1.3rem;
+  }
+  #footer .footer_widget ul li a {
+    line-height: 2.3rem;
+  }
+  #footer .copyright .copyright-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #home .header-top {
+    padding: 0.9rem 0  0.3rem;
+  }
+  #home .header-top .social_links {
+    text-align: center;
+  }
+  #home .header-top .social_links i {
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
+  #home .header-top .short_contact_list {
+    text-align: center;
+    padding-top: 0.3rem;
+  }
+  #home .header-top .short_contact_list ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #home .header-top .short_contact_list ul li {
+    padding: 0  0.4rem;
+  }
+  .slider_area .slider_text h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .slider_area .slider_text h1 span {
+    font-weight: 600;
+  }
+  .slider_area .slider_text p {
+    font-size: 1.1rem;
+    max-width: 400px;
+    padding: 1rem 0;
+  }
+  #welcome-docmed-sec {
+    padding: 3rem 0;
+  }
+  #welcome-docmed-sec .image .img-A {
+    width: 100%;
+  }
+  #welcome-docmed-sec .image .img-B {
+    display: none;
+  }
+  #welcome-docmed-sec .text {
+    padding-top: 3rem;
+  }
+  #welcome-docmed-sec .text h3 {
+    font-size: 1.8rem;
+  }
+  #welcome-docmed-sec .text p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  #welcome-docmed-sec .text ul li {
+    font-size: 0.9rem;
+  }
+  #our-department-sec {
+    padding: 3rem 0;
+  }
+  #our-department-sec .section-title {
+    padding-bottom: 2rem;
+  }
+  #our-department-sec .section-title h3 {
+    font-size: 1.9rem;
+  }
+  #our-department-sec .section-title p {
+    font-size: 1rem;
+  }
+  #expert-doctors-sec .heading h3 {
+    font-size: 1.8rem;
+  }
+  #business-expert .bottom-part .right {
+    padding-top: 2rem;
+  }
+  #footer .footer_widget {
+    padding: 2rem 0;
+  }
+  #footer .footer_widget .footer_title {
+    padding-bottom: 1rem;
+  }
+  #footer .footer_widget ul {
+    padding: 0;
+  }
+  #footer .footer_widget .remove-padding {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider_area .slider_text p {
+    max-width: 320px;
+  }
+  .Emergency-contact-sec .left-part, .Emergency-contact-sec .right-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Emergency-contact-sec .left-part .info_button, .Emergency-contact-sec .right-part .info_button {
+    margin: 1.5rem 0 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
